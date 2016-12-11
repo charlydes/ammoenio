@@ -11,6 +11,8 @@
 
     <title>Ammoenio</title>
 
+
+
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
 
@@ -26,6 +28,15 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+     <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=IE8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css" rel="stylesheet" type="text/css">
+        <style type="text/css"></style>
+
+
 
 </head>
 
@@ -48,13 +59,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="about.html">Introduction</a>
                     </li>
                     <li>
                         <a href="services.html">Tests</a>
                     </li>
                     <li class="active">
-                        <a href="full-width.html">Future Vision</a>
+                        <a href="full-width.html">Project Management</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Biweekly Reports<b class="caret"></b></a>
@@ -90,17 +101,207 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Future Vision
+                <h1 class="page-header">Project Management
                     <small></small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="../index.html">Home</a>
                     </li>
-                    <li class="active">Future Vision</li>
+                    <li class="active">Project Management</li>
                 </ol>
             </div>
         </div>
         <!-- /.row -->
+
+
+        <!-- Gantt Chart -->
+        <h2 id="example">
+                Progress Gantt Chart
+            </h2>
+            <hr>
+
+            <div class="gantt"></div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="js/jquery.fn.gantt.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/latest/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+      <script>
+        $(function() {
+
+            "use strict";
+
+            $(".gantt").gantt({
+                source: [ 
+                {
+                    name: "Inventing Project",
+                    values: [{
+                        from: "/Date(1474483158000)/",
+                        to: "/Date(1475347158000)/",
+                        label: "",
+                        customClass: "ganttRed"
+                    }]
+                },
+                {
+                    name: "Smart Contract Deployment Research",
+                    values: [{
+                        from: "/Date(1474483158000)/",
+                        to: "/Date(1483213158000)/",
+                        label: "Test RPC, Truffle, Solidity",
+                        customClass: "ganttRed"
+                    }]
+                },
+                {
+                    name: "Equity Exchange Research",
+                    values: [{
+                        from: "/Date(1478806758000)/",
+                        to: "/Date(1485977958000)/",
+                        label: "Equity Exchange Research",
+                        customClass: "ganttRed"
+                    }]
+                },
+                {
+                    name: "Atos IT Challenge",
+                    values: [{
+                        from: "/Date(1478029158000)/",
+                        to: "/Date(1491071958000)/",
+                        label: "Participation To The Challenge",
+                        customClass: "ganttBlue"
+                    }]
+                },
+               /* {
+                    name: "Development",
+                    values: [{}]
+                },*/
+                {
+                    name: "Smart Contract Automation",
+                    values: [{
+                        from: "/Date(1483299558000)/",
+                        to: "/Date(1491071958000)/",
+                        label: "Smart Contract Automation",
+                        customClass: "ganttGreen"
+                    }]
+                },
+                {
+                    name: "Platform Development",
+                    values: [{
+                        from: "/Date(1483299558000)/",
+                        to: "/Date(1491071958000)/",
+                        label: "Platform Development",
+                        customClass: "ganttGreen"
+                    }]
+                },
+                
+                ],
+                navigate: "scroll",
+                scale: "weeks",
+                maxScale: "months",
+                minScale: "hours",
+                itemsPerPage: 10,
+                useCookie: true,
+                
+            })
+
+            prettyPrint();
+
+        });
+    </script>
+    <br>
+
+    <!-- /Gantt Chart -->
+
+    <!-- Requirements -->
+    <section>
+    <h2>
+        Requirements
+    </h2>
+    <hr>
+
+     <div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Must Have</th>
+        <th>Should Have</th>
+        <th>Could Have</th>
+        <th>Would Have</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Allow the exchange of stocks.</td>
+        <td>The ability to vote in company decisions.</td>
+        <td>Different types of business models such as reverse vesting.</td>
+        <td>Manage gain and loss in the sail of shares to be tax efficient.</td>
+      </tr>
+      <tr>
+        <td>Interactive and easy to use interface.</td>
+        <td>The possibility to buy different kinds of stocks such as preferential shares.</td>
+        <td>Allow for convertible notes.</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Transactions must be officialized with contracts that are smart and legal-binding.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  </section>
+    <!-- /Requirements -->
+ <br>
+    <!-- Task List -->
+
+    <section>
+        <h2> Task List</h2>
+        <hr>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td>Tasks</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Create private test network and establish blockchain with genesis block.</td>
+                        <td><i class="fa fa-check-square-o" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Create multiple ethereum wallets and start mining and transferring ether.</td>
+                        <td><i class="fa fa-check-square-o" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Create smart contracts and deploy them on the blockchain.</td>
+                        <td><i class="fa fa-check-square-o" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Create presentation website.</td>
+                        <td><i class="fa fa-check-square-o" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Create the UI for the project.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Confirm every detail of the business model.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Automate the creation of smart contracts and the ether transfers.</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- /Task List -->
 
 
         <hr>
@@ -117,10 +318,10 @@
     </div>
     <!-- /.container -->
 
-    <!-- jQuery -->
+    <!-- jQuery 
     <script src="../js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
+     Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
 
 </body>
