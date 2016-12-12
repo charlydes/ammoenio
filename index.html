@@ -19,6 +19,7 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -89,9 +90,23 @@
         <div class="container">
             <div class="intro-text">
                 
-                <div class="intro-heading">Ammoenio</div>
-                <div class="intro-lead-in">Welcome the future of investing!</div>
-                <a href="#services" class="page-scroll btn" style="padding-top:5%;"><img src="img/logos/down.png"></a>
+                <div id="msg" class="intro-heading">
+                <script>
+                    var showText = function (target, message, index, interval) {   
+                      if (index < message.length) {
+                        $(target).append(message[index++]);
+                        setTimeout(function () { showText(target, message, index, interval); }, interval);
+                      }
+                    }
+                    $(function () {
+
+                      showText("#msg", "Ammoenio", 0, 300);   
+
+                    });
+                </script>
+                </div>
+                <div id="div1" style="visibility:hidden;" class="intro-lead-in">Welcome the future of investing!</div>
+                <a id="div2" href="#services" class="page-scroll btn" style="padding-top:5%; visibility: hidden;"><img src="img/logos/down.png"></a>
             </div>
         </div>
     </header>
@@ -121,8 +136,8 @@
                     <span class="fa-stack fa-4x">
                         <img src="img/logos/contract.png" style="width:144px; padding-right:36px;">
                     </span>
-                    <h4 class="service-heading">Stocks</h4>
-                    <p class="text-muted">We enable small and big investors to buy stocks as opposed to directly found the companies. With Ammoenio anyone can become an investor and play an active role in the growth of the projects they believe in.</p>
+                    <h4 class="service-heading">Shares</h4>
+                    <p class="text-muted">We enable small and big investors to buy shares as opposed to directly found the companies. With Ammoenio anyone can become an investor and play an active role in the growth of the projects they believe in.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -195,7 +210,7 @@
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -205,6 +220,12 @@
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
+    setTimeout(function(){
+document.getElementById('div1').style.visibility = "visible";
+},2700);
+    setTimeout(function(){
+document.getElementById('div2').style.visibility = "visible";
+},2700);
     </script>
 
 </body>
