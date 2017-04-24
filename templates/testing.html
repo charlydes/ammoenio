@@ -378,6 +378,38 @@
                     </tr>
                     <tr>
                         <td>26</td>
+                        <td>Cross-platform Testing</td>
+                        <td>We tested the server on Ubuntu and Mac.</td>
+                        <td>The server application was easy to run.</td>
+                        <td>Success</td>
+                        <td>Gabriel Vanca, Charles Desbaux<br>02/04/17-04/04/17</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>Tested Sever Specification</td>
+                        <td>We tested the server application on different virtual machines with different amount of RAM in order to understand what specifications we need to run our application.</td>
+                        <td>The server application failed in 50% of cases if using 515MB of RAM, but succeded to run without issues when using 1GB.</td>
+                        <td>Success</td>
+                        <td>Gabriel Vanca<br>05/04/17</td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>Cross-browser testing for website</td>
+                        <td>We tested our website on Chrome, Internet Explorer, Mozzile Firefox, Safari and Edge.</td>
+                        <td>We tested the web server on Chrome with success. Internet Explorer, Mozzila Firefox and Safari presented some issues. We did not find any important issues with Edge, but some design content was not looking right.</td>
+                        <td>Success</td>
+                        <td>Gabriel Vanca<br>06/04/17-08/04/17</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>Cross-platform testing for website</td>
+                        <td>We tested our website on tablets and on mobile phones.</td>
+                        <td>Whilest we did encounter any issues on the tablets we tested on, mobile phones were not able to run our website appropitely. This seems to be due to issues with screen-size support.</td>
+                        <td>Failure</td>
+                        <td>Charles Desbaux<br>06/04/17-08/04/17</td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
                         <td>Deploying to TestRPC</td>
                         <td>We tried again deploying contracts to TestRPC.</td>
                         <td>We managed to fix the "run out of gas" error by editing the source code of TestRPC.</td>
@@ -385,12 +417,91 @@
                         <td>Gabriel Vanca<br>08/04/17</td>
                     </tr>
                     <tr>
-                        <td>27</td>
+                        <td>31</td>
+                        <td>UX use cases</td>
+                        <td>We have runned extensive test on the 2 presented use cases and taking into consideration the 2 personas.</td>
+                        <td>All tests were a success. Website was easy tu use.</td>
+                        <td>Success</td>
+                        <td>Gabriel Vanca, Charles Desbaux<br>08/04/17-15/04/17</td>
+                    </tr>
+                    <tr>
+                        <td>32</td>
+                        <td>UI surveys</td>
+                        <td>We have conducted surveys with aproximatly 10-15 of our colleagues in order to understand how to improve our UI design and to understand how intuitive our website is.</td>
+                        <td>All tests were a success and all people surveyed agree the website is very intuitive. Some improvements were made following this surveys.</td>
+                        <td>Success</td>
+                        <td>Charles Desbaux<br>08/04/17-15/04/17</td>
+                    </tr>
+                    <tr>
+                        <td>33</td>
                         <td>Automatic Testing of Solidity Contracts</td>
                         <td>We used Mocha and Truffle in order to run automatic testing on the contracts.</td>
                         <td>All tests were a success.</td>
                         <td>Success</td>
                         <td>Andreas Zinonos<br>12/04/17-22/04/17</td>
+                    </tr>
+
+                    <tr>
+                        <td>34</td>
+                        <td>Unit Testing of the Server Apllication</td>
+                        <td>We conducted unit testing on the NodeJS server.</td>
+                        <td>Most tests were a success. Any discovered bugs were promptly fixed.</td>
+                        <td>Success</td>
+                        <td>Gabriel Vanca<br>12/04/17-16/04/17</td>
+                    </tr>
+
+                    <tr>
+                        <td>35</td>
+                        <td>Integration Testing of the Server Apllication</td>
+                        <td>We conducted integration testing on the NodeJS server.</td>
+                        <td>Most tests were a success. Any discovered bugs were promptly fixed.</td>
+                        <td>Success</td>
+                        <td>Gabriel Vanca<br>14/04/17-17/04/17</td>
+                    </tr>
+
+                    <tr>
+                        <td>36</td>
+                        <td>Integration Testing of the Server Apllication and AngularJS website</td>
+                        <td>We conducted integration testing on the NodeJS server whilest connected to the AngularJS.</td>
+                        <td>Most tests were a success. Any discovered bugs were promptly fixed.</td>
+                        <td>Success</td>
+                        <td>Gabriel Vanca, Charles Desbaux<br>15/04/17-18/04/17</td>
+                    </tr>
+
+                    <tr>
+                        <td>37</td>
+                        <td>Full System Testing</td>
+                        <td>We conducted intensive full system testing.</td>
+                        <td>Most tests were a success. Any discovered bugs were promptly fixed.</td>
+                        <td>Success</td>
+                        <td>Gabriel Vanca, Charles Desbaux, Andreas Zinonos<br>16/04/17-24/04/17</td>
+                    </tr>
+
+                    <tr>
+                        <td>38</td>
+                        <td>Testing Scripts</td>
+                        <td>We wrote scripts that tested the functionality of the Solidity contracts.</td>
+                        <td>All tests were succesful.</td>
+                        <td>Success</td>
+                        <td>Andreas Zinonos<br>18/04/17-20/04/17</td>
+                    </tr>
+
+                    <tr>
+                        <td>39</td>
+                        <td>Performance Testing</td>
+                        <td>We did some performance testing on the virtual machine by using some of Ubuntu's built in mechanism (especially for memory perfomrance cheching) as well as Digital Ocean's performance checkers for CPU usage and network usage.</td>
+                        <td>Tests were a succes. The website would not have any difficulty supporty a moderate number of users.</td>
+                        <td>Success</td>
+                        <td>Gabriel Vanca<br>20/04/17</td>
+                    </tr>
+
+                    <tr>
+                        <td>40</td>
+                        <td>Responsive Design Testing</td>
+                        <td>We did some tests to test the responsiveness of our web app.</td>
+                        <td>The app is overall responsive, even though some pages might seem to take a while to load. This is because it takes time to querry the Blockchain. We introduced loading screens to account for that.</td>
+                        <td>Success</td>
+                        <td>Charles Desbaux<br>20/04/17-21/04/17</td>
                     </tr>
 
                 </tbody>
