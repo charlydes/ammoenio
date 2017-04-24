@@ -151,14 +151,19 @@
         <section>
             <h2>Testing Strategy</h2>
             <hr>
-            <p> We are aiming to use fully automated testing practices as the main testing strategy for our system. We will be doing testing in three stages: unit testing (componen testing), integration testing (testing of sets of components and the interfaces
-                and interactiosn between them) and full system testing.
-                <br><br> The testing will be done inside the TestRPC framework and by using different accounts and wallets. Several testing scripts will have the purpose to automate the testing and check that everything works fine. The scripts will be
-                testing the system at different stages: some scripts will just initiate and transfer contracts, whilst others will accomplish more complex tasks in order to do be able do to the testing on sets of components as well as on full system.
-                The automatic testing strategy aims to test the functional parts of the system.
-                <br><br> Besides the automatic testing, we will also be doing some manual testing, especially at system level (including sanity testing and smoke testing). These practices with tests both functional parts of the system as well as non-functional
-                (speed, responsiveness of the system, usability etc.).
+            <p> We have aimed to use a combination of manual testing and of fully automated testing practices as the main testing strategy for our system. We have done the testing in three stages: unit testing (component testing), integration testing (testing
+                of sets of components and the interfaces and interactiosn between them) and full system testing.
+                <br><br> Several testing scripts have the purpose to automate the testing and check that everything works fine in regards to the Solidity contracts deployed on the Blockchain. The scripts are testing the system at different stages: some
+                scripts just initiated and transfer contracts, whilst others execute more complex tasks in order to do be able do to the testing on sets of components as well as on full system. The automatic testing strategy aims to test the functional
+                parts of the system.
+                <br><br> Besides the automatic testing, we have also done intensive manual testing, especially at system level (including sanity testing and smoke testing), but also at unit level and integration level. These practices tested both functional
+                parts of the system as well as non-functional (speed, responsiveness of the system, usability etc.).
+                <br><br> There was no need to wory about security testing due to using Blockchain and an external Google Firebase database, therefore not storing any information on the actual server. For other security issues, we are relying on Cloudfare
+                to protects our server. (Cloudflare includes a firewall, DDoS protection and encryption protection). Due to also making use of SSL certificates and of Cloudflares's option for enforcing HTTPS, we are not worried about malicious software
+                capturing internet packets and stealing data and passwords.
+
             </p>
+            <br>
         </section>
         <!-- /System Testing -->
 
