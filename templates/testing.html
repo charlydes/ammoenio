@@ -158,9 +158,9 @@
                 parts of the system.
                 <br><br> Besides the automatic testing, we have also done intensive manual testing, especially at system level (including sanity testing and smoke testing), but also at unit level and integration level. These practices tested both functional
                 parts of the system as well as non-functional (speed, responsiveness of the system, usability etc.).
-                <br><br> There was no need to wory about security testing due to using Blockchain and an external Google Firebase database, therefore not storing any information on the actual server. For other security issues, we are relying on Cloudfare
-                to protects our server. (Cloudflare includes a firewall, DDoS protection and encryption protection). Due to also making use of SSL certificates and of Cloudflares's option for enforcing HTTPS, we are not worried about malicious software
-                capturing internet packets and stealing data and passwords.
+                <br><br> There was not much need to wory about security testing due to using Blockchain (we did have to run some security testing on the Solidity contracts though) and an external Google Firebase database, therefore not storing any information
+                on the actual server. For other security issues, we are relying on Cloudfare to protects our server. (Cloudflare includes a firewall, DDoS protection and encryption protection). Due to also making use of SSL certificates and of Cloudflares's
+                option for enforcing HTTPS, we are not worried about malicious software capturing internet packets and stealing data and passwords.
 
             </p>
             <br>
@@ -507,6 +507,15 @@
                         <td>The app is overall responsive, even though some pages might seem to take a while to load. This is because it takes time to querry the Blockchain. We introduced loading screens to account for that.</td>
                         <td>Success</td>
                         <td>Charles Desbaux<br>20/04/17-21/04/17</td>
+                    </tr>
+
+                    <tr>
+                        <td>41</td>
+                        <td>Security Testing of Smart Contracts</td>
+                        <td>We did some security testing on our Solidity smart contracts. We tested against the most common issues that appear in Solidity Contracts.</td>
+                        <td>All tests were succesful. No security issue was identified. </td>
+                        <td>Success</td>
+                        <td>Andreas Zinonos<br>20/04/17-23/04/17</td>
                     </tr>
 
                 </tbody>
