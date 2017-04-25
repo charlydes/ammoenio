@@ -208,6 +208,11 @@
             <p class="c27"><span class="c1">The server application also managed some very basic backup so that if it crashes, it can easily reload the connection to the RPC client. When using the real Ethereum Blockchain, this is no longer an issue and backup is not needed.</span></p>
             <p class="c6"><span class="c18 c21"></span></p>
             <p class="c6"><span class="c18 c21"></span></p>
+            <p> The main components of the NodeJS server are the following: </p>
+            <p style="padding-left:24px"> • Routes.js - uses ExpresJS to manage HTTP request from the AngularJS component <br> • InputReader.js - reads and parses the soldity contracts using Regex <br> • ControllerIntialiser.js - initialises and manages the controller contract <br>                • ContractsLoader.js - deploys contracts to the blockchain <br> • AccountsLoader.js - gets the accounts from the RPC client <br> • BackupManager.js - deals with all the backup related activites <br> • Currency.js - gets the ETH-GBP conversion
+                rate
+                <br> • RPCIntialiser.js - starts the connection with the RPC client
+            </p>
             <br>
             <h4>
                 <p class="c10"><span class="c18 c7">Smart Contracts – Blockchain</span></p>
