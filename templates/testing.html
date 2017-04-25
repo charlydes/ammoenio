@@ -129,7 +129,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Testing
-                    <small>Here you can explore the experiments our team has carried out.</small>
+                    <!--<small>Here you can explore the experiments our team has carried out.</small>-->
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="../index.html">Home</a>
@@ -150,6 +150,7 @@
 
         <section>
             <h2>Testing Strategy</h2>
+            <h4>Here you can read about our testing strategy</h4>
             <hr>
             <p> We have aimed to use a combination of manual testing and of fully automated testing practices as the main testing strategy for our system. We have done the testing in three stages: unit testing (component testing), integration testing (testing
                 of sets of components and the interfaces and interactiosn between them) and full system testing.
@@ -167,363 +168,371 @@
         </section>
         <!-- /System Testing -->
 
-        <div class="table-responsive">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Experiment Title</th>
-                        <th>Experiment Detail</th>
-                        <th>Experiment Results</th>
-                        <th>Success And Failure</th>
-                        <th>Author and Date</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Install and run blockchain tools</td>
-                        <td>We had to install the necessary blockchain tools and frameworks and ensure that they properly worked, in order to take our project forward. These included Ethereum, geth, mist wallet.</td>
-                        <td>After some trouble isntalling certain frameworks, all the necessary tools were installed and running properly</td>
-                        <td>Success</td>
-                        <td>Andreas Zinonos - Gabriel Vanca - Charles Albert Desbaux <br>04/10/2016</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Donwload complete blockchain</td>
-                        <td>We had to download the entire blockchain in order to sync Ethereum with the network and start running tets.</td>
-                        <td>After long periods of time we couldn't get the blockchain downloaded and it seemed to just download forever. After further research we realized that we don't have to do that but just make a test server.</td>
-                        <td>Failure</td>
-                        <td>Andreas Zinonos - Gabriel Vanca - Charles Albert Desbaux <br>08/10/2016</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Create test blockchain network</td>
-                        <td>We had to create a test network for the ethereum platform to work on. The main reason was to run our experiments without affecting the main network, but also because downloading the blockchain was taking great amounts of time.
-                            We did this but instantiating a test network from a genesis block.</td>
-                        <td>The test network was successfully created and we were able to use it for all our tests.</td>
-                        <td>Success</td>
-                        <td>Andreas Zinonos<br>14/10/2016</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Create Ethereum wallets</td>
-                        <td>Create Ethereum wallets/accounts so that we could perform trasnactions between them.</td>
-                        <td>We managed to create 2 wallets each.</td>
-                        <td>Success</td>
-                        <td>Andreas Zinonos - Gabriel Vanca - Charles Albert Desbaux <br>15/10/2016</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Mine ether</td>
-                        <td>We had to mine ether before performing any further tests, since ether and gas are required for any transaction to take place.</td>
-                        <td>We were able to mine ether at amazing speeds since the test network was brand new and the proof of work required to mine a block was easy.</td>
-                        <td>Success</td>
-                        <td>Andreas Zinonos - Gabriel Vanca - Charles Albert Desbaux <br>15/10/2016</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Transfer ether between accounts</td>
-                        <td>Transfer ether between wallets/accounts so that we could see how a transaction works, and how we would later use ether.</td>
-                        <td>Ether was transferred succesfully.</td>
-                        <td>Success</td>
-                        <td>Andreas Zinonos - Gabriel Vanca - Charles Albert Desbaux <br>17/10/2016</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Reset test network</td>
-                        <td>We had to reset the test network and make a few alterations since we made a few mistakes at the beginning of our learning curve.</td>
-                        <td>We managed to reset the netowork and start a new blockchain</td>
-                        <td>Success</td>
-                        <td>Andreas Zinonos<br>20/10/2016</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>Create bitcoin wallet</td>
-                        <td>In this experiment we created a bitcoin wallet to see how it works compared to an ethereum wallet.</td>
-                        <td>Experiment provided good knowledge of how funds and blockchain work in such systems</td>
-                        <td>Success</td>
-                        <td>Andreas Zinonos<br>24/10/2016</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>Create website (Version 1)</td>
-                        <td>We created a first version of the website were we would upload our project progress.</td>
-                        <td>The website didn't seem to suffice for the standards of the project.</td>
-                        <td>Failure</td>
-                        <td>Charles Albert Desbaux <br>30/10/2016</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>Create website (Version 2)</td>
-                        <td>Rebuild the entire website to follow the standards given to us by UCL.</td>
-                        <td>The website was completed successfully</td>
-                        <td>Success</td>
-                        <td>Charles Albert Desbaux <br>10/12/2016</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td>Logical tests on how shares would be created and distributed</td>
-                        <td>We had to come up with a plan of how exactly we would create shares for a company and distribute them to buyers. A few plans were considered which were then logically broken down to find the most suitable one.</td>
-                        <td>We concluded to a way with which we will issue the shares.</td>
-                        <td>Success</td>
-                        <td>Gabriel Vanca<br>20/11/2016</td>
-                    </tr>
-                    <tr>
-                        <td>12</td>
-                        <td>Logical tests on how dividence would work</td>
-                        <td>We had to come up with a plan of how dividence would work and how funds would be transferred to share owners.</td>
-                        <td>We concluded to a way with which we will calculate the dividence</td>
-                        <td>Success</td>
-                        <td>Gabriel Vanca<br>23/11/2016</td>
-                    </tr>
-                    <tr>
-                        <td>13</td>
-                        <td>Create a test self-destructing contract</td>
-                        <td>We created a contract which would self-destruct when the creator would decide.</td>
-                        <td>Contract self-destructed successfully.</td>
-                        <td>Success</td>
-                        <td>Andreas Zinonos<br>10/11/2016</td>
-                    </tr>
-                    <tr>
-                        <td>14</td>
-                        <td>Create a test customer contract</td>
-                        <td>We created a customer contract that would be used to subscribe to services of providers</td>
-                        <td>The contract was created successfully</td>
-                        <td>Success</td>
-                        <td>Andreas Zinonos<br>11/11/2016</td>
-                    </tr>
-                    <tr>
-                        <td>15</td>
-                        <td>Create a test provider contract</td>
-                        <td>We created a provider contract that would be used to provide servies to customers.</td>
-                        <td>The contract was created successfully</td>
-                        <td>Success</td>
-                        <td>Andreas Zinonos<br>12/11/2016</td>
-                    </tr>
-                    <tr>
-                        <td>16</td>
-                        <td>Create registration of customer to provider test contract</td>
-                        <td>Establish communication between the two contracts and confirm that functions in both contracts work and affect the two accounts</td>
-                        <td>The contracts and all the functions were working</td>
-                        <td>Success</td>
-                        <td>Andreas Zinonos<br>13/11/2016</td>
-                    </tr>
-                    <tr>
-                        <td>17</td>
-                        <td>Run TestRPC and test accounts and transferring of funds</td>
-                        <td>We switched from Geth to TestRPC and had to make sure that everything worked properly with these freameworks.</td>
-                        <td>We managed to set everything up.</td>
-                        <td>Success</td>
-                        <td>Andreas Zinonos, Charles Desbaux<br>15/11/2016</td>
-                    </tr>
-                    <tr>
-                        <td>18</td>
-                        <td>Run Truffle and compile/migrate a contract</td>
-                        <td>We deployed contracts on the current frameworks and confirmed that we could access them from there.</td>
-                        <td>Everything was working properly.</td>
-                        <td>Success</td>
-                        <td>Andreas Zinonos, Charles Desbaux<br>15/11/2016</td>
-                    </tr>
-                    <tr>
-                        <td>19</td>
-                        <td>Create custom token contract</td>
-                        <td>We created a custom token contract to provide accounts with a certain value of token. This can be used later to represent a share.</td>
-                        <td>The contract was working perfectly.</td>
-                        <td>Success</td>
-                        <td>Andreas Zinonos, Charles Desbaux<br>18/11/2016</td>
-                    </tr>
-                    <tr>
-                        <td>20</td>
-                        <td>Deploy custom token contract on Truffle and TestRPC</td>
-                        <td>We created deployed our custom contract on our test network using Truffle and TestRPC.</td>
-                        <td>The contract was deployed successfully.</td>
-                        <td>Success</td>
-                        <td>Andreas Zinonos, Charles Desbaux<br>18/11/2016</td>
-                    </tr>
-                    <tr>
-                        <td>21</td>
-                        <td>Manipulate custom token contract on Truffle and TestRPC</td>
-                        <td>After deploying our contract, we called its methods from the test network and could see that it was working correctly.</td>
-                        <td>The contract was functioning properly after being deployed.</td>
-                        <td>Success</td>
-                        <td>Andreas Zinonos, Charles Desbaux<br>18/11/2016</td>
-                    </tr>
-                    <tr>
-                        <td>22</td>
-                        <td>Add new value to variable in contract on Truffle and TestRPC</td>
-                        <td>We tried changing the vaulue of a variable stored in a contract, but we couldn't confirm that this worked.</td>
-                        <td>When calling the get() function, the value wasn't displaying properly.</td>
-                        <td>Failure</td>
-                        <td>Andreas Zinonos<br>25/11/16</td>
-                    </tr>
-                    <tr>
-                        <td>23</td>
-                        <td>Connect Angular to the Blockchain via Truffle</td>
-                        <td>We tried connecting the front end to the RPC client, but it failed.</td>
-                        <td>No data retrieval was possible.</td>
-                        <td>Failure</td>
-                        <td>Gabriel Vanca<br>24/02/17</td>
-                    </tr>
-                    <tr>
-                        <td>24</td>
-                        <td>Deploying to TestRPC</td>
-                        <td>We tried deploying contracts to TestRPC, but it did not work.</td>
-                        <td>We were running out of gas.</td>
-                        <td>Failure</td>
-                        <td>Gabriel Vanca<br>01/03/17</td>
-                    </tr>
-                    <tr>
-                        <td>25</td>
-                        <td>Deploying to EtherSim</td>
-                        <td>As TestRPC was not working, we looked at EtherSim. We managed to get it working with this one.</td>
-                        <td>Connection was established and contracts were deployed. Data was being read from the contracts.</td>
-                        <td>Success</td>
-                        <td>Gabriel Vanca<br>09/03/17</td>
-                    </tr>
-                    <tr>
-                        <td>26</td>
-                        <td>Cross-platform Testing</td>
-                        <td>We tested the server on Ubuntu and Mac.</td>
-                        <td>The server application was easy to run.</td>
-                        <td>Success</td>
-                        <td>Gabriel Vanca, Charles Desbaux<br>02/04/17-04/04/17</td>
-                    </tr>
-                    <tr>
-                        <td>27</td>
-                        <td>Tested Sever Specification</td>
-                        <td>We tested the server application on different virtual machines with different amount of RAM in order to understand what specifications we need to run our application.</td>
-                        <td>The server application failed in 50% of cases if using 515MB of RAM, but succeded to run without issues when using 1GB.</td>
-                        <td>Success</td>
-                        <td>Gabriel Vanca<br>05/04/17</td>
-                    </tr>
-                    <tr>
-                        <td>28</td>
-                        <td>Cross-browser testing for website</td>
-                        <td>We tested our website on Chrome, Internet Explorer, Mozzile Firefox, Safari and Edge.</td>
-                        <td>We tested the web server on Chrome with success. Internet Explorer, Mozzila Firefox and Safari presented some issues. We did not find any important issues with Edge, but some design content was not looking right.</td>
-                        <td>Success</td>
-                        <td>Gabriel Vanca<br>06/04/17-08/04/17</td>
-                    </tr>
-                    <tr>
-                        <td>29</td>
-                        <td>Cross-platform testing for website</td>
-                        <td>We tested our website on tablets and on mobile phones.</td>
-                        <td>Whilest we did encounter any issues on the tablets we tested on, mobile phones were not able to run our website appropitely. This seems to be due to issues with screen-size support.</td>
-                        <td>Failure</td>
-                        <td>Charles Desbaux<br>06/04/17-08/04/17</td>
-                    </tr>
-                    <tr>
-                        <td>30</td>
-                        <td>Deploying to TestRPC</td>
-                        <td>We tried again deploying contracts to TestRPC.</td>
-                        <td>We managed to fix the "run out of gas" error by editing the source code of TestRPC.</td>
-                        <td>Success</td>
-                        <td>Gabriel Vanca<br>08/04/17</td>
-                    </tr>
-                    <tr>
-                        <td>31</td>
-                        <td>UX use cases</td>
-                        <td>We have runned extensive test on the 2 presented use cases and taking into consideration the 2 personas.</td>
-                        <td>All tests were a success. Website was easy tu use.</td>
-                        <td>Success</td>
-                        <td>Gabriel Vanca, Charles Desbaux<br>08/04/17-15/04/17</td>
-                    </tr>
-                    <tr>
-                        <td>32</td>
-                        <td>UI surveys</td>
-                        <td>We have conducted surveys with aproximatly 10-15 of our colleagues in order to understand how to improve our UI design and to understand how intuitive our website is.</td>
-                        <td>All tests were a success and all people surveyed agree the website is very intuitive. Some improvements were made following this surveys.</td>
-                        <td>Success</td>
-                        <td>Charles Desbaux<br>08/04/17-15/04/17</td>
-                    </tr>
-                    <tr>
-                        <td>33</td>
-                        <td>Automatic Testing of Solidity Contracts</td>
-                        <td>We used Mocha and Truffle in order to run automatic testing on the contracts.</td>
-                        <td>All tests were a success.</td>
-                        <td>Success</td>
-                        <td>Andreas Zinonos<br>12/04/17-22/04/17</td>
-                    </tr>
+        <section>
+            <br>
 
-                    <tr>
-                        <td>34</td>
-                        <td>Unit Testing of the Server Apllication</td>
-                        <td>We conducted unit testing on the NodeJS server.</td>
-                        <td>Most tests were a success. Any discovered bugs were promptly fixed.</td>
-                        <td>Success</td>
-                        <td>Gabriel Vanca<br>12/04/17-16/04/17</td>
-                    </tr>
+            <h2>Conducted Tests </h2>
+            <h4>Here you can check the tests we have conducted as part of our testing strategy.</h4>
+            <hr>
 
-                    <tr>
-                        <td>35</td>
-                        <td>Integration Testing of the Server Apllication</td>
-                        <td>We conducted integration testing on the NodeJS server.</td>
-                        <td>Most tests were a success. Any discovered bugs were promptly fixed.</td>
-                        <td>Success</td>
-                        <td>Gabriel Vanca<br>14/04/17-17/04/17</td>
-                    </tr>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Experiment Title</th>
+                            <th>Experiment Detail</th>
+                            <th>Experiment Results</th>
+                            <th>Success And Failure</th>
+                            <th>Author and Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Install and run blockchain tools</td>
+                            <td>We had to install the necessary blockchain tools and frameworks and ensure that they properly worked, in order to take our project forward. These included Ethereum, geth, mist wallet.</td>
+                            <td>After some trouble isntalling certain frameworks, all the necessary tools were installed and running properly</td>
+                            <td>Success</td>
+                            <td>Andreas Zinonos - Gabriel Vanca - Charles Albert Desbaux <br>04/10/2016</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Donwload complete blockchain</td>
+                            <td>We had to download the entire blockchain in order to sync Ethereum with the network and start running tets.</td>
+                            <td>After long periods of time we couldn't get the blockchain downloaded and it seemed to just download forever. After further research we realized that we don't have to do that but just make a test server.</td>
+                            <td>Failure</td>
+                            <td>Andreas Zinonos - Gabriel Vanca - Charles Albert Desbaux <br>08/10/2016</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Create test blockchain network</td>
+                            <td>We had to create a test network for the ethereum platform to work on. The main reason was to run our experiments without affecting the main network, but also because downloading the blockchain was taking great amounts of time.
+                                We did this but instantiating a test network from a genesis block.</td>
+                            <td>The test network was successfully created and we were able to use it for all our tests.</td>
+                            <td>Success</td>
+                            <td>Andreas Zinonos<br>14/10/2016</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Create Ethereum wallets</td>
+                            <td>Create Ethereum wallets/accounts so that we could perform trasnactions between them.</td>
+                            <td>We managed to create 2 wallets each.</td>
+                            <td>Success</td>
+                            <td>Andreas Zinonos - Gabriel Vanca - Charles Albert Desbaux <br>15/10/2016</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Mine ether</td>
+                            <td>We had to mine ether before performing any further tests, since ether and gas are required for any transaction to take place.</td>
+                            <td>We were able to mine ether at amazing speeds since the test network was brand new and the proof of work required to mine a block was easy.</td>
+                            <td>Success</td>
+                            <td>Andreas Zinonos - Gabriel Vanca - Charles Albert Desbaux <br>15/10/2016</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Transfer ether between accounts</td>
+                            <td>Transfer ether between wallets/accounts so that we could see how a transaction works, and how we would later use ether.</td>
+                            <td>Ether was transferred succesfully.</td>
+                            <td>Success</td>
+                            <td>Andreas Zinonos - Gabriel Vanca - Charles Albert Desbaux <br>17/10/2016</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Reset test network</td>
+                            <td>We had to reset the test network and make a few alterations since we made a few mistakes at the beginning of our learning curve.</td>
+                            <td>We managed to reset the netowork and start a new blockchain</td>
+                            <td>Success</td>
+                            <td>Andreas Zinonos<br>20/10/2016</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Create bitcoin wallet</td>
+                            <td>In this experiment we created a bitcoin wallet to see how it works compared to an ethereum wallet.</td>
+                            <td>Experiment provided good knowledge of how funds and blockchain work in such systems</td>
+                            <td>Success</td>
+                            <td>Andreas Zinonos<br>24/10/2016</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Create website (Version 1)</td>
+                            <td>We created a first version of the website were we would upload our project progress.</td>
+                            <td>The website didn't seem to suffice for the standards of the project.</td>
+                            <td>Failure</td>
+                            <td>Charles Albert Desbaux <br>30/10/2016</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Create website (Version 2)</td>
+                            <td>Rebuild the entire website to follow the standards given to us by UCL.</td>
+                            <td>The website was completed successfully</td>
+                            <td>Success</td>
+                            <td>Charles Albert Desbaux <br>10/12/2016</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Logical tests on how shares would be created and distributed</td>
+                            <td>We had to come up with a plan of how exactly we would create shares for a company and distribute them to buyers. A few plans were considered which were then logically broken down to find the most suitable one.</td>
+                            <td>We concluded to a way with which we will issue the shares.</td>
+                            <td>Success</td>
+                            <td>Gabriel Vanca<br>20/11/2016</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Logical tests on how dividence would work</td>
+                            <td>We had to come up with a plan of how dividence would work and how funds would be transferred to share owners.</td>
+                            <td>We concluded to a way with which we will calculate the dividence</td>
+                            <td>Success</td>
+                            <td>Gabriel Vanca<br>23/11/2016</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Create a test self-destructing contract</td>
+                            <td>We created a contract which would self-destruct when the creator would decide.</td>
+                            <td>Contract self-destructed successfully.</td>
+                            <td>Success</td>
+                            <td>Andreas Zinonos<br>10/11/2016</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Create a test customer contract</td>
+                            <td>We created a customer contract that would be used to subscribe to services of providers</td>
+                            <td>The contract was created successfully</td>
+                            <td>Success</td>
+                            <td>Andreas Zinonos<br>11/11/2016</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>Create a test provider contract</td>
+                            <td>We created a provider contract that would be used to provide servies to customers.</td>
+                            <td>The contract was created successfully</td>
+                            <td>Success</td>
+                            <td>Andreas Zinonos<br>12/11/2016</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>Create registration of customer to provider test contract</td>
+                            <td>Establish communication between the two contracts and confirm that functions in both contracts work and affect the two accounts</td>
+                            <td>The contracts and all the functions were working</td>
+                            <td>Success</td>
+                            <td>Andreas Zinonos<br>13/11/2016</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>Run TestRPC and test accounts and transferring of funds</td>
+                            <td>We switched from Geth to TestRPC and had to make sure that everything worked properly with these freameworks.</td>
+                            <td>We managed to set everything up.</td>
+                            <td>Success</td>
+                            <td>Andreas Zinonos, Charles Desbaux<br>15/11/2016</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>Run Truffle and compile/migrate a contract</td>
+                            <td>We deployed contracts on the current frameworks and confirmed that we could access them from there.</td>
+                            <td>Everything was working properly.</td>
+                            <td>Success</td>
+                            <td>Andreas Zinonos, Charles Desbaux<br>15/11/2016</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>Create custom token contract</td>
+                            <td>We created a custom token contract to provide accounts with a certain value of token. This can be used later to represent a share.</td>
+                            <td>The contract was working perfectly.</td>
+                            <td>Success</td>
+                            <td>Andreas Zinonos, Charles Desbaux<br>18/11/2016</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>Deploy custom token contract on Truffle and TestRPC</td>
+                            <td>We created deployed our custom contract on our test network using Truffle and TestRPC.</td>
+                            <td>The contract was deployed successfully.</td>
+                            <td>Success</td>
+                            <td>Andreas Zinonos, Charles Desbaux<br>18/11/2016</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>Manipulate custom token contract on Truffle and TestRPC</td>
+                            <td>After deploying our contract, we called its methods from the test network and could see that it was working correctly.</td>
+                            <td>The contract was functioning properly after being deployed.</td>
+                            <td>Success</td>
+                            <td>Andreas Zinonos, Charles Desbaux<br>18/11/2016</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>Add new value to variable in contract on Truffle and TestRPC</td>
+                            <td>We tried changing the vaulue of a variable stored in a contract, but we couldn't confirm that this worked.</td>
+                            <td>When calling the get() function, the value wasn't displaying properly.</td>
+                            <td>Failure</td>
+                            <td>Andreas Zinonos<br>25/11/16</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>Connect Angular to the Blockchain via Truffle</td>
+                            <td>We tried connecting the front end to the RPC client, but it failed.</td>
+                            <td>No data retrieval was possible.</td>
+                            <td>Failure</td>
+                            <td>Gabriel Vanca<br>24/02/17</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>Deploying to TestRPC</td>
+                            <td>We tried deploying contracts to TestRPC, but it did not work.</td>
+                            <td>We were running out of gas.</td>
+                            <td>Failure</td>
+                            <td>Gabriel Vanca<br>01/03/17</td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>Deploying to EtherSim</td>
+                            <td>As TestRPC was not working, we looked at EtherSim. We managed to get it working with this one.</td>
+                            <td>Connection was established and contracts were deployed. Data was being read from the contracts.</td>
+                            <td>Success</td>
+                            <td>Gabriel Vanca<br>09/03/17</td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>Cross-platform Testing</td>
+                            <td>We tested the server on Ubuntu and Mac.</td>
+                            <td>The server application was easy to run.</td>
+                            <td>Success</td>
+                            <td>Gabriel Vanca, Charles Desbaux<br>02/04/17-04/04/17</td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>Tested Sever Specification</td>
+                            <td>We tested the server application on different virtual machines with different amount of RAM in order to understand what specifications we need to run our application.</td>
+                            <td>The server application failed in 50% of cases if using 515MB of RAM, but succeded to run without issues when using 1GB.</td>
+                            <td>Success</td>
+                            <td>Gabriel Vanca<br>05/04/17</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>Cross-browser testing for website</td>
+                            <td>We tested our website on Chrome, Internet Explorer, Mozzile Firefox, Safari and Edge.</td>
+                            <td>We tested the web server on Chrome with success. Internet Explorer, Mozzila Firefox and Safari presented some issues. We did not find any important issues with Edge, but some design content was not looking right.</td>
+                            <td>Success</td>
+                            <td>Gabriel Vanca<br>06/04/17-08/04/17</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>Cross-platform testing for website</td>
+                            <td>We tested our website on tablets and on mobile phones.</td>
+                            <td>Whilest we did encounter any issues on the tablets we tested on, mobile phones were not able to run our website appropitely. This seems to be due to issues with screen-size support.</td>
+                            <td>Failure</td>
+                            <td>Charles Desbaux<br>06/04/17-08/04/17</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>Deploying to TestRPC</td>
+                            <td>We tried again deploying contracts to TestRPC.</td>
+                            <td>We managed to fix the "run out of gas" error by editing the source code of TestRPC.</td>
+                            <td>Success</td>
+                            <td>Gabriel Vanca<br>08/04/17</td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>UX use cases</td>
+                            <td>We have runned extensive test on the 2 presented use cases and taking into consideration the 2 personas.</td>
+                            <td>All tests were a success. Website was easy tu use.</td>
+                            <td>Success</td>
+                            <td>Gabriel Vanca, Charles Desbaux<br>08/04/17-15/04/17</td>
+                        </tr>
+                        <tr>
+                            <td>32</td>
+                            <td>UI surveys</td>
+                            <td>We have conducted surveys with aproximatly 10-15 of our colleagues in order to understand how to improve our UI design and to understand how intuitive our website is.</td>
+                            <td>All tests were a success and all people surveyed agree the website is very intuitive. Some improvements were made following this surveys.</td>
+                            <td>Success</td>
+                            <td>Charles Desbaux<br>08/04/17-15/04/17</td>
+                        </tr>
+                        <tr>
+                            <td>33</td>
+                            <td>Automatic Testing of Solidity Contracts</td>
+                            <td>We used Mocha and Truffle in order to run automatic testing on the contracts.</td>
+                            <td>All tests were a success.</td>
+                            <td>Success</td>
+                            <td>Andreas Zinonos<br>12/04/17-22/04/17</td>
+                        </tr>
 
-                    <tr>
-                        <td>36</td>
-                        <td>Integration Testing of the Server Apllication and AngularJS website</td>
-                        <td>We conducted integration testing on the NodeJS server whilest connected to the AngularJS.</td>
-                        <td>Most tests were a success. Any discovered bugs were promptly fixed.</td>
-                        <td>Success</td>
-                        <td>Gabriel Vanca, Charles Desbaux<br>15/04/17-18/04/17</td>
-                    </tr>
+                        <tr>
+                            <td>34</td>
+                            <td>Unit Testing of the Server Apllication</td>
+                            <td>We conducted unit testing on the NodeJS server.</td>
+                            <td>Most tests were a success. Any discovered bugs were promptly fixed.</td>
+                            <td>Success</td>
+                            <td>Gabriel Vanca<br>12/04/17-16/04/17</td>
+                        </tr>
 
-                    <tr>
-                        <td>37</td>
-                        <td>Full System Testing</td>
-                        <td>We conducted intensive full system testing.</td>
-                        <td>Most tests were a success. Any discovered bugs were promptly fixed.</td>
-                        <td>Success</td>
-                        <td>Gabriel Vanca, Charles Desbaux, Andreas Zinonos<br>16/04/17-24/04/17</td>
-                    </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>Integration Testing of the Server Apllication</td>
+                            <td>We conducted integration testing on the NodeJS server.</td>
+                            <td>Most tests were a success. Any discovered bugs were promptly fixed.</td>
+                            <td>Success</td>
+                            <td>Gabriel Vanca<br>14/04/17-17/04/17</td>
+                        </tr>
 
-                    <tr>
-                        <td>38</td>
-                        <td>Testing Scripts</td>
-                        <td>We wrote scripts that tested the functionality of the Solidity contracts.</td>
-                        <td>All tests were succesful.</td>
-                        <td>Success</td>
-                        <td>Andreas Zinonos<br>18/04/17-20/04/17</td>
-                    </tr>
+                        <tr>
+                            <td>36</td>
+                            <td>Integration Testing of the Server Apllication and AngularJS website</td>
+                            <td>We conducted integration testing on the NodeJS server whilest connected to the AngularJS.</td>
+                            <td>Most tests were a success. Any discovered bugs were promptly fixed.</td>
+                            <td>Success</td>
+                            <td>Gabriel Vanca, Charles Desbaux<br>15/04/17-18/04/17</td>
+                        </tr>
 
-                    <tr>
-                        <td>39</td>
-                        <td>Performance Testing</td>
-                        <td>We did some performance testing on the virtual machine by using some of Ubuntu's built in mechanism (especially for memory perfomrance cheching) as well as Digital Ocean's performance checkers for CPU usage and network usage.</td>
-                        <td>Tests were a succes. The website would not have any difficulty supporty a moderate number of users.</td>
-                        <td>Success</td>
-                        <td>Gabriel Vanca<br>20/04/17</td>
-                    </tr>
+                        <tr>
+                            <td>37</td>
+                            <td>Full System Testing</td>
+                            <td>We conducted intensive full system testing.</td>
+                            <td>Most tests were a success. Any discovered bugs were promptly fixed.</td>
+                            <td>Success</td>
+                            <td>Gabriel Vanca, Charles Desbaux, Andreas Zinonos<br>16/04/17-24/04/17</td>
+                        </tr>
 
-                    <tr>
-                        <td>40</td>
-                        <td>Responsive Design Testing</td>
-                        <td>We did some tests to test the responsiveness of our web app.</td>
-                        <td>The app is overall responsive, even though some pages might seem to take a while to load. This is because it takes time to querry the Blockchain. We introduced loading screens to account for that.</td>
-                        <td>Success</td>
-                        <td>Charles Desbaux<br>20/04/17-21/04/17</td>
-                    </tr>
+                        <tr>
+                            <td>38</td>
+                            <td>Testing Scripts</td>
+                            <td>We wrote scripts that tested the functionality of the Solidity contracts.</td>
+                            <td>All tests were succesful.</td>
+                            <td>Success</td>
+                            <td>Andreas Zinonos<br>18/04/17-20/04/17</td>
+                        </tr>
 
-                    <tr>
-                        <td>41</td>
-                        <td>Security Testing of Smart Contracts</td>
-                        <td>We did some security testing on our Solidity smart contracts. We tested against the most common issues that appear in Solidity Contracts.</td>
-                        <td>All tests were succesful. No security issue was identified. </td>
-                        <td>Success</td>
-                        <td>Andreas Zinonos<br>20/04/17-23/04/17</td>
-                    </tr>
+                        <tr>
+                            <td>39</td>
+                            <td>Performance Testing</td>
+                            <td>We did some performance testing on the virtual machine by using some of Ubuntu's built in mechanism (especially for memory perfomrance cheching) as well as Digital Ocean's performance checkers for CPU usage and network usage.</td>
+                            <td>Tests were a succes. The website would not have any difficulty supporty a moderate number of users.</td>
+                            <td>Success</td>
+                            <td>Gabriel Vanca<br>20/04/17</td>
+                        </tr>
 
-                </tbody>
-            </table>
-        </div>
+                        <tr>
+                            <td>40</td>
+                            <td>Responsive Design Testing</td>
+                            <td>We did some tests to test the responsiveness of our web app.</td>
+                            <td>The app is overall responsive, even though some pages might seem to take a while to load. This is because it takes time to querry the Blockchain. We introduced loading screens to account for that.</td>
+                            <td>Success</td>
+                            <td>Charles Desbaux<br>20/04/17-21/04/17</td>
+                        </tr>
+
+                        <tr>
+                            <td>41</td>
+                            <td>Security Testing of Smart Contracts</td>
+                            <td>We did some security testing on our Solidity smart contracts. We tested against the most common issues that appear in Solidity Contracts.</td>
+                            <td>All tests were succesful. No security issue was identified. </td>
+                            <td>Success</td>
+                            <td>Andreas Zinonos<br>20/04/17-23/04/17</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
     </div>
 
-
+    <br><br>
+    </section>
 
 
     <!-- Footer -->

@@ -148,7 +148,7 @@
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="../index.html">Home</a>
-                    </li>pers
+                    </li>
                     <li class="active">Requirements</li>
                 </ol>
             </div>
@@ -362,108 +362,6 @@
         </section>
         <!-- /Requirements -->
 
-        <!-- Gantt Chart -->
-
-        <h2 id="example">
-            Progress Gantt Charts
-        </h2>
-        <hr>
-
-        <br>
-        <h3> Term 1 </h3> <br>
-
-        <div class="row"><img style="width: 100%;" src="../img/gannt1.png"></div> <br>
-
-        <br>
-        <br>
-        <h3> Term 2 </h3> <br>
-
-        <div class="gantt"></div>
-
-
-        <script src="js/jquery.min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-        <script src="js/jquery.fn.gantt.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/latest/js/bootstrap.min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
-        <script>
-            $(function() {
-
-                "use strict";
-
-                $(".gantt").gantt({
-                    source: [{
-                            name: "Inventing Project",
-                            values: [{
-                                from: "/Date(1474483158000)/",
-                                to: "/Date(1475347158000)/",
-                                label: "",
-                                customClass: "ganttRed"
-                            }]
-                        }, {
-                            name: "Smart Contract Deployment Research",
-                            values: [{
-                                from: "/Date(1474483158000)/",
-                                to: "/Date(1483213158000)/",
-                                label: "Test RPC, Truffle, Solidity",
-                                customClass: "ganttRed"
-                            }]
-                        }, {
-                            name: "Equity Exchange Research",
-                            values: [{
-                                from: "/Date(1478806758000)/",
-                                to: "/Date(1485977958000)/",
-                                label: "Equity Exchange Research",
-                                customClass: "ganttRed"
-                            }]
-                        }, {
-                            name: "Atos IT Challenge",
-                            values: [{
-                                from: "/Date(1478029158000)/",
-                                to: "/Date(1491071958000)/",
-                                label: "Participation To The Challenge",
-                                customClass: "ganttBlue"
-                            }]
-                        },
-                        /* {
-                             name: "Development",
-                             values: [{}]
-                         },*/
-                        {
-                            name: "Smart Contract Automation",
-                            values: [{
-                                from: "/Date(1483299558000)/",
-                                to: "/Date(1491071958000)/",
-                                label: "Smart Contract Automation",
-                                customClass: "ganttGreen"
-                            }]
-                        }, {
-                            name: "Platform Development",
-                            values: [{
-                                from: "/Date(1483299558000)/",
-                                to: "/Date(1491071958000)/",
-                                label: "Platform Development",
-                                customClass: "ganttGreen"
-                            }]
-                        },
-
-                    ],
-                    navigate: "scroll",
-                    scale: "weeks",
-                    maxScale: "months",
-                    minScale: "hours",
-                    itemsPerPage: 10,
-                    useCookie: true,
-
-                })
-
-                prettyPrint();
-
-            });
-        </script>
-        <br><br>
-
-        <!-- /Gantt Chart -->
 
 
         <section>
